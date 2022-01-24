@@ -1,0 +1,8 @@
+import re
+
+c = re.compile(r'<li>(\s*|\n*)<a(\s+)href(\s*)=(\s*)("http://docs.python.org/3/tutorial/"|\'http://docs.python.org/3/tutorial/\')(\s*)>(\s*|\n*)Official Python Tutorial(\s*|\n*)</a>(\s*|\n*)</li>')
+v = '<li> <a href="http://docs.python.org/3/tutorial/">Official Python Tutorial</a> </li>'
+
+x = r'<li>(\s*|\n*)'
+y = '<li> '
+print(c==v)
